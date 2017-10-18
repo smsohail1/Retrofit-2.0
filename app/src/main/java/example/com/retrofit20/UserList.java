@@ -25,7 +25,7 @@ public class UserList {
     private Integer totalPages;
     @SerializedName("data")
     @Expose
-    private List<Datum> data = null;
+    public List<Datum> data = null;
 
     public Integer getPage() {
         return page;
@@ -71,16 +71,16 @@ public class UserList {
 
         @SerializedName("id")
         @Expose
-        private Integer id;
+        public Integer id;
         @SerializedName("first_name")
         @Expose
-        private String firstName;
+        public String firstName;
         @SerializedName("last_name")
         @Expose
-        private String lastName;
+        public String lastName;
         @SerializedName("avatar")
         @Expose
-        private String avatar;
+        public String avatar;
 
         public Integer getId() {
             return id;

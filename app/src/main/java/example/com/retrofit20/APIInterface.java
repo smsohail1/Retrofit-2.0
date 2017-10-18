@@ -16,8 +16,8 @@ public interface APIInterface {
     @GET("/api/unknown")
     Call<MultipleResource> doGetListResources();
 
-   // @POST("/api/users")
-  //  Call<User> createUser(@Body User user);
+//    @POST("/api/users")
+//    Call<User> createUser(@Body User user);
 
     @GET("/api/users?")
     Call<UserList> doGetUserList(@Query("page") String page);
